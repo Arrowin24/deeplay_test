@@ -11,11 +11,12 @@ package ru.arrowin.third_task;
  * за пределы [1,6]. Во время технического собеседования я бы поговорил, почему я не сделал проверки.
  */
 public class Test {
+    private final static int[] playerOneArray = new int[]{2, 1, 5}; // загаданные первым игроком числа
+    private final static int[] playerTwoArray = new int[]{3, 4, 5}; //загаданные вторым игроком числа
+    private final static int numberDiceRoll = 1000; //количество бросков кубика.
     public static void main(String[] args) {
-        int[] playerOneArray = new int[]{2, 1, 5};
-        int[] playerTwoArray = new int[]{1, 1, 5};
         Solution solution = new Solution();
-        solution.getAnswer(playerOneArray,playerTwoArray,10000);
+        solution.getAnswer(playerOneArray,playerTwoArray,numberDiceRoll);
 
     }
 }
